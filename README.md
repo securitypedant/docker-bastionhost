@@ -1,4 +1,5 @@
-# Simple server I use for a docker enviornment where I want to test the environment from the docker container perspective.
+# Ubuntu bastion host in Docker
+Simple server I use for a docker enviornment where I want to test the environment from the docker container perspective.
 
 ## Building the container
 
