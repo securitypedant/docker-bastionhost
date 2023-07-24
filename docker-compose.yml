@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+    bastionhost:
+        image: simonsecuritypedant/bastionhost:latest
+        container_name: bastionhost
+        tty: true
+        restart: always
+        networks:
+          - bastionhost
+        ports:
+            - 22:22
+        volumes:
+          - data:/data
+        environment:
+          - USER=simon
+          - USERPASS=notagoodpassword
+
+volumes:
+  data: {}
+
+networks:
+  bastionhost: {}
+
